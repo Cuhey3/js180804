@@ -62,10 +62,14 @@
 
 ### テンプレートエンジン選定のポイント
 
+<small>
+ 
 本格導入の前に確認しておこう！
 <br>
-フレームワーク標準のものが十分とは限らないぞ！
+フレームワーク標準のものが
+<br>機能的に十分とは限らないぞ！
 
+</small>
 ---
 
 ### ポイントその１
@@ -85,7 +89,7 @@
 
 <br>
 <small>
-関数は任意のタイプを受け取り、<br>また返却できると捗る
+関数は任意のタイプの引数を受け取ることができて、<br>また任意のタイプを返却できると捗る。
 </small>
 
 ---
@@ -96,8 +100,12 @@
 
 <br>
 
+<small>
+ 
 - こちらの機能は普通はあります。
 - 任意のタイプを引数に取れると尚可
+
+</small>
 
 ---
 
@@ -111,15 +119,23 @@
 
 Nunjucks
 
+<small>
+ 
 - 公式 [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
 - mozilla謹製
 - jinja2系
-- テンプレートから呼び出す関数は<br>[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
+- テンプレートから呼び出す関数は[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
+
+</small>
 
 --- 
 
 ### フィルタの自作（カスタムフィルタ）
 
+<small>
+ 
 基本的な作り方は下記リンクの通りです。
 
 Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
+
+</small>
