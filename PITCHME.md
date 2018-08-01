@@ -99,6 +99,6 @@
 
 ### フィルタの自作（カスタムフィルタ）
 
-だいたい下記リンクの通りです。
+作り方はだいたい下記リンクの通りです。
 
-- Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
+Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
