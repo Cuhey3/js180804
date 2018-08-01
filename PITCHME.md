@@ -68,7 +68,7 @@
 
 ### テンプレート上で呼び出せる関数を<br>自作できること
 
-- 関数は任意のタイプを受け取り、<br>また返却できること
+- 関数は任意のタイプを受け取り、<br>また返却できると捗る
 
 ---
 
@@ -77,7 +77,7 @@
 ### HTML断片を返す子テンプレートを<br>自作できること
 
 - こちらの機能は普通はあります。
-- 任意のタイプのを引数に取れると尚可
+- 任意のタイプを引数に取れると尚可
 
 ---
 
@@ -85,9 +85,9 @@
 
 ---
 
-### SPEC
+### 使用するテンプレートエンジン
 
-- [Nunjucks](https://mozilla.github.io/nunjucks/)
-- mozilla謹製
-- jinja2系
-- テンプレートから呼び出す関数をフィルタと呼ぶ
+- Nunjucks [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
+ - mozilla謹製
+ - jinja2系
+ - テンプレートから呼び出す関数は<br>[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
