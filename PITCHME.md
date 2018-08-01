@@ -83,23 +83,23 @@
 
 ### ポイントその２
 
-#### テンプレート上で呼び出せる関数を<br>自作できること
-
-<br>
-<small>
-関数は任意のタイプの引数を受け取ることができて、<br>また任意のタイプを返却できると捗る。
-</small>
-
----
-
-### ポイントその３
-
 #### HTML断片を返す子テンプレートを<br>自作できること
 
 <br>
 <small>
 こちらの機能は普通はあります。
 <br>任意のタイプを引数に取れると尚可
+</small>
+
+---
+
+### ポイントその３
+
+#### テンプレート上で呼び出せる関数を<br>自作できること
+
+<br>
+<small>
+関数は任意のタイプの引数を受け取ることができて、<br>また任意のタイプを返却できると捗る。
 </small>
 
 ---
@@ -127,9 +127,7 @@ Nunjucks
 ### フィルタの自作（カスタムフィルタ）
 
 <small>
- 
 基本的な作り方は下記リンクの通りです。
 
 Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
-
 </small>
