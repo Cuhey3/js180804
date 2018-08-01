@@ -63,12 +63,10 @@
 ### テンプレートエンジン選定のポイント
 
 <small>
- 
-本格導入の前に確認しておこう！
+本格的に使用をはじめる前に確認しておこう！
 <br>
 フレームワーク標準のものが
 <br>機能的に十分とは限らないぞ！
-
 </small>
 ---
 
@@ -98,8 +96,6 @@
 
 #### HTML断片を返す子テンプレートを<br>自作できること
 
-<br>
-
 <small>
  
 - こちらの機能は普通はあります。
@@ -117,15 +113,13 @@
 
 ---
 
-Nunjucks
+#### Nunjucks
 
 <small>
- 
 - 公式 [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
 - mozilla謹製
 - jinja2系
 - テンプレートから呼び出す関数は[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
-
 </small>
 
 --- 
