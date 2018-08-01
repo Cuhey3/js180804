@@ -128,6 +128,5 @@ Nunjucks
 
 <small>
 基本的な作り方は下記リンクの通りです。
-
-Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
+<br>Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
 </small>
