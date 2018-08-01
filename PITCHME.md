@@ -91,3 +91,10 @@
  - mozilla謹製
  - jinja2系
  - テンプレートから呼び出す関数は<br>[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
+
+--- 
+
+### フィルタの自作（カスタムフィルタ）
+
+だいたい以下の通りです。
+Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
