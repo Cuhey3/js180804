@@ -87,14 +87,18 @@
 
 ### 使用するテンプレートエンジン
 
-- Nunjucks [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
- - mozilla謹製
- - jinja2系
- - テンプレートから呼び出す関数は<br>[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
+---
+
+### Nunjucks
+- 公式 [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
+- mozilla謹製
+- jinja2系
+- テンプレートから呼び出す関数は<br>[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
 
 --- 
 
 ### フィルタの自作（カスタムフィルタ）
 
-だいたい以下の通りです。
-Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
+だいたい下記リンクの通りです。
+
+- Custom-filters [https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
