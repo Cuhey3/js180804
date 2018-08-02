@@ -189,3 +189,13 @@ A message for you: {{ message|shorten(20) }}
 <small>
 Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
 </small>
+
+---
+
+### ここから本題
+
+---
+
+### Namespaceの衝突を気にせずに<br>自作フィルタをどんどん作りたい！
+
+---
