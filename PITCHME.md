@@ -126,13 +126,13 @@ Nunjucks
 
 フィルタの使用イメージ
 
-input
+Input
 
 ```
 {{ "abcdef" | reverse }}
 ```
 
-output
+Output
 
 ```
 fedcba
@@ -142,19 +142,19 @@ fedcba
 
 フィルタの使用イメージその２
 
-input
+Input
 
 ```
 {% for i in [1, 2, 3, 4] | reverse %}
-   {{ i }}
+  {{ i }}
 {% endfor %}
 
 ```
 
-output
+Output
 
 ```
-   4 3 2 1
+4 3 2 1
 ```
 
 ---
