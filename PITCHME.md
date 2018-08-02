@@ -200,7 +200,7 @@ Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https:
 
 ---
 
-ピリオドで親パッケージがあるかのように演出
+1.ピリオドで親パッケージがあるかのように演出
 
 ```javascript
 var nunjucks = require('nunjucks');
@@ -211,9 +211,11 @@ env.addFilter('user.helloWorld', function() {
 });
 ```
 
-```foo.html
+```
 {# Hello World! #}
 {{ '' | user.helloWorld }}
 ```
 
 Nunjucksなら普通に動きます。
+
+
