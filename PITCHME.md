@@ -200,7 +200,7 @@ Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https:
 
 ---
 
-ピリオドで親パッケージが存在するかのように演出
+ピリオドで親パッケージがあるかのように演出
 
 ```javascript
 var nunjucks = require('nunjucks');
