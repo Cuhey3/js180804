@@ -211,7 +211,7 @@ env.addFilter('user.helloWorld', function() {
 });
 ```
 
-```
+```foo.html
 {# Hello World! #}
 {{ '' | user.helloWorld }}
 ```
