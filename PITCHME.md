@@ -166,9 +166,7 @@ Output
 
 ---
 
-### フィルタの自作（カスタムフィルタ）
-
-定義
+自作フィルタの定義
 
 ```javascript
 var nunjucks = require('nunjucks');
@@ -179,7 +177,7 @@ env.addFilter('shorten', function(str, count) {
 });
 ```
 
-使用する
+自作フィルタを使用する
 
 ```
 {# Show the first 5 characters #}
