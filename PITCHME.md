@@ -257,7 +257,6 @@ var nunjucks = require('nunjucks');
 var env = new nunjucks.Environment();
  
 setNestedFunc(env, customFilters);
-
 ```
 
 これで自作フィルタを階層化して量産可能！
@@ -267,8 +266,38 @@ setNestedFunc(env, customFilters);
 ### 自作フィルタをもっと使いやすく
 
 <small>
+ 
 - import機能を作りたい(パッケージ名を省略）
 - 普通に関数のように呼びたい
+
 </small>
 
 ---
+
+import機能を持った自作フィルタを書く
+
+```
+customFilters.filterImport = function(packageName, ...filterNames) {
+  var ctx = this.ctx;
+  filterNames.forEach(function(filterName) {
+    ctx[filterName] = customFilters[packageName][filterName];
+  });
+};
+```
+
+<small>
+this.ctxがミソ。ここへの書き込みは、
+テンプレート上で変数を宣言するのと同じ効果がある。
+これだけだと作りが甘いのでサンプルコードを参照してください。
+</small>
+
+---
+
+使ってみる
+
+```
+{{ 'user' | filterImport('helloWorld') }}
+{# Hello World! #}
+{{helloWorld()}}
+```
+
