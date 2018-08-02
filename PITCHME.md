@@ -124,6 +124,41 @@ Nunjucks
 
 --- 
 
+フィルタの使用イメージ
+
+input
+
+```
+{{ "abcdef" | reverse }}
+```
+
+output
+
+```
+fedcba
+```
+
+---
+
+フィルタの使用イメージその２
+
+input
+
+```
+{% for i in [1, 2, 3, 4] | reverse %}
+   {{ i }}
+{% endfor %}
+
+```
+
+output
+
+```
+   4 3 2 1
+```
+
+---
+
 ### フィルタの自作（カスタムフィルタ）
 
 <small>
