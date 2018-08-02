@@ -148,7 +148,6 @@ Input
 {% for i in [1, 2, 3, 4] | reverse %}
   {{ i }}
 {% endfor %}
-
 ```
 
 Output
