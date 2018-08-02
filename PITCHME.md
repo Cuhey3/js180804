@@ -168,7 +168,26 @@ Output
 
 ### フィルタの自作（カスタムフィルタ）
 
+定義
+
+```javascript
+var nunjucks = require('nunjucks');
+var env = new nunjucks.Environment();
+
+env.addFilter('shorten', function(str, count) {
+    return str.slice(0, count || 5);
+});
+```
+
+使用する
+
+```
+{# Show the first 5 characters #}
+A message for you: {{ message|shorten }}
+
+{# Show the first 20 characters #}
+A message for you: {{ message|shorten(20) }}
+```
 <small>
-基本的な作り方は下記リンクの通りです。
-<br>Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
+Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
 </small>
