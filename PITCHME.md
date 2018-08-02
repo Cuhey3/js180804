@@ -200,9 +200,9 @@ Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https:
 
 ---
 
-1.ピリオドで親パッケージがあるかのように演出
+1. ピリオドで親パッケージがあるかのように演出
 
-```javascript
+```
 var nunjucks = require('nunjucks');
 var env = new nunjucks.Environment();
 
@@ -218,4 +218,45 @@ env.addFilter('user.helloWorld', function() {
 
 Nunjucksなら普通に動きます。
 
+---
 
+2. 自作フィルタを一つのオブジェクトにまとめる
+
+
+```
+var customFilters = {
+    user: {
+        helloWorld: function(){
+            return 'Hello World!';
+        },
+        goodbyeWorld: function(){
+            return 'Goodbye World!';
+        }
+    }
+};
+```
+なんかそれっぽいですよね？
+
+---
+
+3. まとめてaddFilterする関数を書く
+
+```
+function setNestedFunc(env, anyType, parents = []) {
+  if (typeof anyType === 'function') {
+    env.addFilter(parents.join("."), anyType);
+  } else if (anyType && typeof anyType === 'object' && !Array.isArray(anyType)) {
+    Object.keys(anyType).forEach(function(key) {
+      setNestedFunc(env, anyType[key], parents.concat(key));
+    });
+  }
+}
+
+var nunjucks = require('nunjucks');
+var env = new nunjucks.Environment();
+ 
+setNestedFunc(env, customFilters);
+
+```
+
+これで自作フィルタを階層化しまくれます。
