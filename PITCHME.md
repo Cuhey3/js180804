@@ -245,7 +245,8 @@ var customFilters = {
 function setNestedFunc(env, anyType, parents = []) {
   if (typeof anyType === 'function') {
     env.addFilter(parents.join("."), anyType);
-  } else if (anyType && typeof anyType === 'object' && !Array.isArray(anyType)) {
+  } else if (anyType && typeof anyType === 'object'
+    && !Array.isArray(anyType)) {
     Object.keys(anyType).forEach(function(key) {
       setNestedFunc(env, anyType[key], parents.concat(key));
     });
@@ -259,4 +260,4 @@ setNestedFunc(env, customFilters);
 
 ```
 
-これで自作フィルタを階層化しまくれます。
+これで自作フィルタを階層化して量産可能！
