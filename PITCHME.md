@@ -138,6 +138,10 @@ Output
 fedcba
 ```
 
+<small>
+reverseはNunjucksのビルトインフィルタ。
+</small>
+
 ---
 
 フィルタの使用イメージその２
@@ -155,6 +159,10 @@ Output
 ```
 4 3 2 1
 ```
+
+<small>
+配列にも適用可能。
+</small>
 
 ---
 
