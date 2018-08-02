@@ -286,7 +286,7 @@ customFilters.filterImport = function(packageName, ...filterNames) {
 ```
 
 <small>
-this.ctxがミソ。ここへの書き込みは、
+`this.ctx`がミソ。ここへの書き込みは、
 テンプレート上で変数を宣言するのと同じ効果がある。
 これだけだと作りが甘いのでサンプルコードを参照してください。
 </small>
@@ -301,3 +301,9 @@ this.ctxがミソ。ここへの書き込みは、
 {{helloWorld()}}
 ```
 
+<small>
+ 
+コンテキスト変数にバインドしているので、
+逆にパイプラインを使っては書けない。
+（けど別に困らないよね？）
+</small>
