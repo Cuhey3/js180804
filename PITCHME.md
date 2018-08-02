@@ -196,6 +196,24 @@ Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https:
 
 ---
 
-### Namespaceの衝突を気にせずに<br>自作フィルタをどんどん作りたい！
+### フィルタ名の衝突を気にせずに<br>自作フィルタをどんどん作りたい！
 
 ---
+
+ピリオドで親パッケージが存在するかのように演出
+
+```javascript
+var nunjucks = require('nunjucks');
+var env = new nunjucks.Environment();
+
+env.addFilter('user.helloWorld', function() {
+    return 'Hello World!';
+});
+```
+
+```
+{# Hello World! #}
+{{ '' | user.helloWorld }}
+```
+
+Nunjucksなら普通に動きます。
