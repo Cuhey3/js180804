@@ -258,9 +258,8 @@ var env = new nunjucks.Environment();
  
 setNestedFunc(env, customFilters);
 ```
-<small>
+
 これで自作フィルタを階層化して量産可能！
-</small>
 
 ---
 
