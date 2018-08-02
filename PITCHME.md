@@ -200,7 +200,7 @@ Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https:
 
 ---
 
-1. ピリオドで親パッケージがあるかのように演出
+1.フィルタ名にピリオドを含めて<br>親パッケージがあるかのように演出
 
 ```
 var nunjucks = require('nunjucks');
@@ -220,7 +220,7 @@ Nunjucksなら普通に動きます。
 
 ---
 
-2. 自作フィルタを一つのオブジェクトにまとめる
+2.自作フィルタを一つのオブジェクトにまとめる
 
 
 ```
@@ -239,7 +239,7 @@ var customFilters = {
 
 ---
 
-3. まとめてaddFilterする関数を書く
+3.まとめてaddFilterする関数を書く
 
 ```
 function setNestedFunc(env, anyType, parents = []) {
@@ -266,7 +266,6 @@ setNestedFunc(env, customFilters);
 ### 自作フィルタをもっと使いやすく
 
 <small>
- 
 - import機能を作りたい(パッケージ名を省略）
 - 普通に関数のように呼びたい
 
@@ -302,7 +301,6 @@ customFilters.filterImport = function(packageName, ...filterNames) {
 ```
 
 <small>
- 
 コンテキスト変数にバインドしているので、<br>
 逆にパイプラインを使っては書けない。<br>
 （けど別に困らないよね？）
