@@ -99,7 +99,7 @@
 
 <br>
 <small>
-関数は任意のタイプの引数を受け取ることができて、<br>また任意のタイプを返却できると捗る。
+関数は、任意のタイプの引数を受け取ることができて、<br>また任意のタイプを返却できると捗る。
 </small>
 
 ---
@@ -117,7 +117,7 @@
 - 公式 [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
 - mozilla謹製
 - jinja2系
-- テンプレートから呼び出す関数を[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ぶ
+- テンプレートから呼び出す関数は<br>[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ぶ
 
 --- 
 
@@ -126,17 +126,19 @@
 Input
 
 ```
-{{ "abcdef" | reverse }}
+<p>{{ "123456" | replace("4", ".")}}</p>
+<p>{{ "abcdef" | reverse }}</p>
 ```
 
 Output
 
 ```
-fedcba
+<p>123.56</p>
+<p>fedcba</p>
 ```
 
 <small>
-reverseはNunjucksのビルトインフィルタ。
+replace, reverseはNunjucksのビルトインフィルタ。
 </small>
 
 ---
