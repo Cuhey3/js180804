@@ -167,7 +167,7 @@ reverseフィルタは配列にも適用可能。
 
 #### 自作フィルタの定義
 
-nunjucksモジュールに対して書き込めばOK。
+nunjucksモジュールにaddFilterするだけ！
 
 ```javascript
 var nunjucks = require('nunjucks');
@@ -200,7 +200,9 @@ A message for you: {{ message|shorten(20) }}
 
 ---
 
-### フィルタ名の衝突を気にせずに<br>自作フィルタをどんどん作りたい！
+### フィルタは基本的にグローバル関数扱い
+### 名前の衝突を気にせずに<br>自作フィルタをどんどん作りたい！
+### 3ステップでその辺を整備します
 
 ---
 
