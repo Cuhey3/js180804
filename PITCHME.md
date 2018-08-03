@@ -112,15 +112,14 @@
 
 ---
 
-Nunjucks
-<small>
+### Nunjucks
+
+<br>
 
 - 公式 [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
 - mozilla謹製
 - jinja2系
-- テンプレートから呼び出す関数は[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ばれる
-
-</small>
+- テンプレートから呼び出す関数を[フィルタ](https://mozilla.github.io/nunjucks/templating.html#filters)と呼ぶ
 
 --- 
 
@@ -161,12 +160,14 @@ Output
 ```
 
 <small>
-配列にも適用可能。
+reverseフィルタは配列にも適用可能。
 </small>
 
 ---
 
-自作フィルタの定義
+### 自作フィルタの定義
+
+nunjucksモジュールに対して書き込めばOK。
 
 ```javascript
 var nunjucks = require('nunjucks');
@@ -177,7 +178,13 @@ env.addFilter('shorten', function(str, count) {
 });
 ```
 
-自作フィルタを使用する
+<small>
+Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
+</small>
+
+---
+
+### 自作フィルタを使用する
 
 ```
 {# Show the first 5 characters #}
@@ -186,9 +193,6 @@ A message for you: {{ message|shorten }}
 {# Show the first 20 characters #}
 A message for you: {{ message|shorten(20) }}
 ```
-<small>
-Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https://mozilla.github.io/nunjucks/api#custom-filters)
-</small>
 
 ---
 
@@ -211,12 +215,12 @@ env.addFilter('user.helloWorld', function() {
 });
 ```
 
+呼び出し
+
 ```
 {# Hello World! #}
 {{ '' | user.helloWorld }}
 ```
-
-Nunjucksなら普通に動きます。
 
 ---
 
