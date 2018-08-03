@@ -3,6 +3,13 @@
 
 ---
 
+### アジェンダ
+
+<br>
+
+- テンプレートエンジンの概要
+- 使用がはかどるちょっとしたハック
+
 ### 自己紹介
 
 <small>
@@ -217,7 +224,7 @@ env.addFilter('user.helloWorld', function() {
 });
 ```
 
-Nunjucksでは普通に呼び出せる
+Nunjucksなら普通に呼び出せる
 
 ```
 {# Hello World! #}
