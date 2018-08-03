@@ -114,8 +114,6 @@
 
 ### Nunjucks
 
-<br>
-
 - 公式 [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/)
 - mozilla謹製
 - jinja2系
@@ -123,7 +121,7 @@
 
 --- 
 
-フィルタの使用イメージ
+### フィルタの使用イメージ
 
 Input
 
@@ -143,7 +141,7 @@ reverseはNunjucksのビルトインフィルタ。
 
 ---
 
-フィルタの使用イメージその２
+#### フィルタの使用イメージその２
 
 Input
 
@@ -165,7 +163,7 @@ reverseフィルタは配列にも適用可能。
 
 ---
 
-### 自作フィルタの定義
+#### 自作フィルタの定義
 
 nunjucksモジュールに対して書き込めばOK。
 
@@ -184,7 +182,7 @@ Custom-filters<br>[https://mozilla.github.io/nunjucks/api#custom-filters](https:
 
 ---
 
-### 自作フィルタを使用する
+#### 自作フィルタを使用する
 
 ```
 {# Show the first 5 characters #}
@@ -215,7 +213,7 @@ env.addFilter('user.helloWorld', function() {
 });
 ```
 
-呼び出し
+Nunjucksでは普通に呼び出せる
 
 ```
 {# Hello World! #}
@@ -304,6 +302,6 @@ customFilters.filterImport = function(packageName, ...filterNames) {
 
 <small>
 コンテキスト変数にバインドしているので、<br>
-逆にパイプラインを使っては書けない。<br>
+逆にパイプラインを使って書くことはできない。<br>
 （けど別に困らないよね？）
 </small>
