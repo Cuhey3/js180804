@@ -314,3 +314,15 @@ customFilters.filterImport = function(packageName, ...filterNames) {
 逆にパイプラインを使って書くことはできない。<br>
 （けど別に困らないよね？）
 </small>
+
+---
+
+### まとめ
+
+---
+
+#### ちょっとしたハックで<br>テンプレートエンジンを楽しく
+
+---
+
+### ご清聴ありがとうございあｍした
