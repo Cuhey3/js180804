@@ -275,8 +275,7 @@ function setNestedFunc(env, anyType, parents = []) {
 }
 
 var nunjucks = require('nunjucks');
-var env = new nunjucks.Environment();
- 
+var env = new nunjucks.Environment(); 
 setNestedFunc(env, customFilters);
 ```
 
