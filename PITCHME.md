@@ -12,6 +12,14 @@
 
 ---
 
+### このスライド
+https://gitpitch.com/cuhey3/js180804
+
+### サンプルコード
+https://github.com/Cuhey3/js180804
+
+---
+
 ### 自己紹介
 
 <small>
@@ -325,4 +333,4 @@ customFilters.filterImport = function(packageName, ...filterNames) {
 
 ---
 
-### ご清聴ありがとうございあｍした
+### ご清聴ありがとうございました
