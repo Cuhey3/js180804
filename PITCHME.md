@@ -12,12 +12,12 @@
 
 ---
 
-### このスライド
+#### スライド
 https://gitpitch.com/cuhey3/js180804
 
 <br>
 
-### サンプルコード
+#### サンプルコード
 https://github.com/Cuhey3/js180804
 
 ---
