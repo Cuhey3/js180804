@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>content area</h3>
+{{ 'user' | filterImport('helloWorld') }}
+
+{# Hello World! #}
+<p>{{ helloWorld() }}</p>
+
+{# Hello World! #}
+<p>{{''| user.helloWorld }}</p>
+
+{{'demo' | funcImport('returnFunc', 'doFunc', 'mapFunc')}}    
+
+{# returnFuncは文字列を引数に取り関数を返す #}
+{% set func = returnFunc("konichiwa!")%}
+{# konichiwa! #}
+<p>{{ func() }}</p>
+
+{# mapFuncは関数を引数に取り関数を返す #}
+{% set twiceFunc = mapFunc(func) %}
+{# konichiwa!konichiwa! #}
+<p>{{ twiceFunc() }}</p>
+
+{# doFuncは関数を引数に取り関数を実行する #}
+{# konichiwa!konichiwa! #}
+<p>{{'' | demo.returnFunc | demo.mapFunc | demo.doFunc }}</p>
+{# konichiwa!konichiwa! #}
+<p>{{ doFunc(mapFunc(returnFunc("konichiwa!"))) }}</p>
+{%endblock %}
